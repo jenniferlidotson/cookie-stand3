@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sales</title>
+  </head>
+  <body>
+      <header>
+        <nav>
+          <a href="./index.html">HOME</a>
+          <a href="./sales.html">SALES</a>
+
+        </nav>
+      </header>
+      <main>
+        <section id="sectionOne">
+          <h2>Would you like to propose a new store location? Fill out the form below!</h2>
+          <form id="addRestForm">
+            <fieldset>
+              <legend>Your Proposal</legend>
+              <label>City Name
+                  <input name="city" type="text"/>
+              </label>
+              <label>Mininum Hourly Customers
+                <input name="minCust" type="number" min="0" step="1"/>
+            </label>
+            <label>Maximum Hourly Customers
+              <input name="maxCust" type="number" min="0" step="1"/>
+            </label>
+            <label>Average Cookie Per Customer
+              <input name="aveCookie" type="number" min="0" step=".1"/>
+            </label>
+            </fieldset>
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        <section id="sectionTwo">
+         <table id="restaurantProfiles">
+          <!-- 
+          <thead>
+            <tr>
+            <td> null</td>
+              <th> 6 am</th>
+              <th> 7 am</th>
+              <th> 8 am</th>
+              <th> Daily Total</th>
+            <tr/>
+          </thead>
+          <tbody>
+            <tr>
+              <th> Seattle</th>
+              <td> salesPerHour</td>
+              <td> salesPerHour</td>
+              <td> salesPerHour</td>
+              <td> grandTotal</td>
+            <tr/>
+            <tr>
+              <th> Tokyo</th>
+              <td> salesPerHour</td>
+              <td> salesPerHour</td>
+              <td> salesPerHour</td>
+              <td> grandTotal</td>
+            <tr/>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Hourly Total</th>
+              <td> hourlyTotal</td>
+              <td> hourlyTotal</td>
+              <td> hourlyTotal</td>
+            </tr>
+          </tfoot>-->
+          </table>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="./index.html">HOME</a>
+        <a href="./sales.html">SALES</a>
+
+      </nav>
+      <script src="./js/app.js"></script>
+    </footer>
+  </body>
+</html>
